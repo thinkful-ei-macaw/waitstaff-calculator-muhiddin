@@ -1,0 +1,26 @@
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 5% 10%;
+}
+
+.meal-details, .customer-charges, .earning-info {
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+input[type="button"], input[type="reset"], #reset {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+input[type="button"]:hover, input[type="reset"]:hover {
+  background-color: green;
+  color: white;
+  transition: all ease-in-out 0.5s ;
+}

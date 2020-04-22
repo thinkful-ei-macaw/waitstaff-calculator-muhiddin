@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Waitstaff Calculator</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+<body>
+  
+  <div class="container">
+    <h1>Waitstaff Calculator</h1>
+    <div class="meal-details">
+      <h3>Enter the Meal Details</h3>
+      <hr />
+      <form id="meal-details-form">
+        <label for="base-meal-price">Base Meal Price: $</label>
+        <input type="number" min="0" name="base-meal-price" id="base-meal-price" placeholder="9.99" required>
+        <label for="tax-rate">Tax Rate: %</label>
+        <input type="number" min="0" name="tax-rate" id="tax-rate" required>
+        <label for="tip-percentage">Tip Percentage: %</label>
+        <input type="number" min="0" name="tip-percentage" id="tip-percentage" required>
+        <div class="submit-cancel">
+        <input type="button" value="Submit" id="submit">
+        <input type="reset" value="Cancel">
+        </div>
+      </form>
+    </div>
+    <div class="customer-charges">
+      <h3>Customer Charges</h3>
+      <hr>
+      <form id="customer-charges">
+        <p>Subtotal <span id="subtotal">0.00</span></p>
+        <p>Tip <span id="tip">0.00</span></p>
+        <hr>
+        <p>Total <span id="total">0.00</span></p>
+      </form>
+    </div>
+    <div class="earning-info">
+      <h3>My Earnings Info</h3>
+      <hr>
+      <div id="customer-charges">
+        <p>Tip Total <span id="tip-total">0.00</span></p>
+        <p>Meal count <span id="meal-count">0</span></p>
+        <hr>
+        <p>Average Tip Per Meal <span id="avg-tip">0.00</span></p>
+      </div>
+    </div>
+    <button id="reset">Reset</button>
+  </div>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
